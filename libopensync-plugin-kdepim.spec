@@ -1,5 +1,5 @@
-Summary:	OpenSync Evolution plugin
-Summary(pl):	Wtyczka Evolution do OpenSync
+Summary:	OpenSync kdepim plugin
+Summary(pl):	Wtyczka kdepim do OpenSync
 Name:		libopensync-plugin-kdepim
 Version:	0.18
 Release:	0.1
