@@ -5,7 +5,7 @@ Version:	0.19
 Release:	0.1
 License:	LGPL
 Group:		Libraries
-#Source0:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.gz?format=raw
+# Source0Download:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.gz?format=raw
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	258defed0c5f8d39eac42f6c294c8f1c
 URL:		http://www.opensync.org/
@@ -14,8 +14,8 @@ BuildRequires:	libopensync-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-OpenSync is a synchronization framework that is platform and distribution
-independent.
+OpenSync is a synchronization framework that is platform and
+distribution independent.
 
 It consists of several plugins that can be used to connect to devices,
 a powerful sync-engine and the framework itself.
@@ -32,7 +32,7 @@ urz±dzeniami, potê¿nego silnika synchronizacji oraz samego szkieletu.
 Ten pakiet zawiera wtyczkê kdepim dla szkieletu OpenSync.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %configure
