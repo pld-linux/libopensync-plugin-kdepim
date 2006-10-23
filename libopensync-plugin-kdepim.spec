@@ -10,7 +10,7 @@ Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	258defed0c5f8d39eac42f6c294c8f1c
 URL:		http://www.opensync.org/
 BuildRequires:	kdepim-devel
-BuildRequires:	libopensync-devel
+BuildRequires:	libopensync-devel >= %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
