@@ -5,8 +5,7 @@ Version:	0.19
 Release:	0.1
 License:	LGPL
 Group:		Libraries
-# Source0Download:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.gz?format=raw
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.gz?format=raw
 # Source0-md5:	258defed0c5f8d39eac42f6c294c8f1c
 URL:		http://www.opensync.org/
 BuildRequires:	kdepim-devel
