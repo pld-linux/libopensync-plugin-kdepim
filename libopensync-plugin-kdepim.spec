@@ -1,5 +1,5 @@
 Summary:	OpenSync kdepim plugin
-Summary(pl.UTF-8):   Wtyczka kdepim do OpenSync
+Summary(pl.UTF-8):	Wtyczka kdepim do OpenSync
 Name:		libopensync-plugin-kdepim
 Version:	0.19
 Release:	0.1
