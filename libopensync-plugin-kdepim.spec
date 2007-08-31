@@ -1,12 +1,12 @@
 Summary:	OpenSync kdepim plugin
 Summary(pl.UTF-8):	Wtyczka kdepim do OpenSync
 Name:		libopensync-plugin-kdepim
-Version:	0.21
+Version:	0.22
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.bz2?format=raw
-# Source0-md5:	b0a1a6bb1565e2e538caec526a072db4
+# Source0-md5:	df4dea8183847da838e6494fcb4e7c0a
 URL:		http://www.opensync.org/
 BuildRequires:	kdepim-devel
 BuildRequires:	libopensync-devel >= %{version}
@@ -56,4 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/opensync/plugins/*.so
 %{_libdir}/opensync/plugins/*.la
-#%{_datadir}/opensync/defaults/*
+%{_datadir}/opensync/defaults/*
