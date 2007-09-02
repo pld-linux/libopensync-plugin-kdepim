@@ -3,13 +3,16 @@ Summary(pl.UTF-8):	Wtyczka kdepim do OpenSync
 Name:		libopensync-plugin-kdepim
 Version:	0.22
 Release:	1
-License:	LGPL
+License:	GPL v2
 Group:		Libraries
 Source0:	http://www.opensync.org/attachment/wiki/download/%{name}-%{version}.tar.bz2?format=raw
 # Source0-md5:	df4dea8183847da838e6494fcb4e7c0a
 URL:		http://www.opensync.org/
-BuildRequires:	kdepim-devel
+BuildRequires:	glib2-devel >= 2.0
+BuildRequires:	kdepim-devel >= 3.0.0
 BuildRequires:	libopensync-devel >= %{version}
+BuildRequires:	libxml2-devel >= 2.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -48,12 +51,14 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -f $RPM_BUILD_ROOT%{_libdir}/opensync/plugins/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_libdir}/opensync/plugins/*.so
-%{_libdir}/opensync/plugins/*.la
-%{_datadir}/opensync/defaults/*
+%attr(755,root,root) %{_libdir}/opensync/plugins/kdepim_lib.so
+%attr(755,root,root) %{_libdir}/opensync/plugins/kdepim_sync.so
+%{_datadir}/opensync/defaults/kdepim-sync
